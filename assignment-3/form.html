@@ -1,0 +1,60 @@
+<html> 
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <h1>İş Başvuru Formu</h1>
+    <form action="/action.php" method="get">
+        <ol>
+            <li><label for="fname">İsminiz Nedir?</label></li><br>
+            <input type="text" id="fname" name="isim" placeholder="İsminizi buraya Yazınız"><br><br>
+            <li><label for="sname">Soyadınız Nedir?</label></li><br>
+            <input type="text" id="sname" name="soy_isim" placeholder="Soyisminizi Buraya Yazınız"> <br><br>
+            <li><label for="age">Doğum Tarihiniz Nedir?</label></li><br>
+            <input type="date" id="age" name="yas"><br><br>
+            <li><p><label for="tel"> Telefon Numaranız Nedir?</p></li>
+            <input type="number" name="telno" id="tel" placeholder="(___)(_______)" title="0 OLMADAN GİRİNİZ!">
+            <li><p>E-Posta Adresiniz Nedir?</p></li>
+            <input type="email" name="eposta" placeholder="örnek@dpu.edu.tr">
+            <li><p>Eğitim Durumubuz Nedir?</p></li>
+            <input type="radio" id="education1" name="egitim" value="ilkokul">
+            <label for="education1">İlkokul</label><br>
+            <input type="radio" id="education2" name="egitim" value="lise">
+            <label for="education2">Lise</label><br>
+            <input type="radio" id="education3" name="egitim" value="lisans">
+            <label for="education3">Lisans</label><br>
+            <input type="radio" id="education4" name="egitim" value="yukseklisans">
+            <label for="education4">Yüksek Lisans</label><br>       
+            <input type="radio" id="education5" name="egitim" value="doktora">
+            <label for="education5">Doktora</label> 
+            <li><p>Cinsiyetiniz nedir?</p></li>
+            <input type="radio" id="erkek" name="Cinsiyet" value="Erkek">
+            <label for="erkek">Erkek</label>
+            <input type="radio" id="kadın" name="Cinsiyet" value="Kadın">
+            <label for="kadın">Kadın</label><br><br>
+            <li><label for="position">Hangi Pozisyonda Çalışmak İstiyorsunuz?</label></li><br>
+            <input type="text" id="position" name="pozisyon"><br><br>
+            <li><p>İş Deneyiminiz Kaç Yıl?</p></li>
+            <input type="radio" id="exp1" name="deneyim" value="düşük">
+            <label for="exp1">1-5</label><br>
+            <input type="radio" id="exp2" name="deneyim" value="orta">
+            <label for="exp2">5-10</label><br>
+            <input type="radio" id="exp3" name="deneyim" value="yüksek">
+            <label for="exp3">10+</label><br>
+            <li><p>İş Yerinden Beklentileriniz Nelerdir?</p></li>
+            <input type="checkbox" name="beklenti" id="expectation1" value="yuksek maas">
+            <label for="expectation1">Yüksek Maaş</label><br>
+            <input type="checkbox" name="beklenti" id="expectation2" value="prim">
+            <label for="expectation2">Prim</label><br>
+            <input type="checkbox" name="beklenti" id="expectation3" value="sosyal_yardim">
+            <label for="expectation3">Sosyal Yardım</label><br>
+            <input type="checkbox" name="beklenti" id="expectation4" value="seyehat">
+            <label for="expectation4">Yurt Dışı Seyehat</label><br>
+            <li><p>Görüşleriniz:</p></li>
+            <textarea name="gorus" cols="30" rows="5"></textarea><br><br>
+            <li><fieldset> Fotoğraf Yükleyiniz. <br>
+            <input type="file" name="fotograf" id=""></fieldset></li>
+        </ol>
+        <input type="submit" value="GÖNDER" src="">
+    </form>
+    </head>
+</html>
